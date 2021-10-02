@@ -17,6 +17,11 @@
             <artifactId>domain</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.kindev</groupId>
+            <artifactId>service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
