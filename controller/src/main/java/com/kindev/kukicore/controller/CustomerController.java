@@ -61,7 +61,7 @@ public class CustomerController {
         );
     }
     @PostMapping("/delete")
-    public boolean updateCustomer(@RequestHeader("id") Long id) {
+    public boolean deleteCustomer(@RequestHeader("id") Long id) {
         log.info("Call to Inside createCustomer Inside CustomerController........");
         return customerService.deleteCustomer(id);
     }

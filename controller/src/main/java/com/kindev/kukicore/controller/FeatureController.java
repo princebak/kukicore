@@ -60,7 +60,7 @@ public class FeatureController {
         );
     }
     @PostMapping("/delete")
-    public boolean updateFeature(@RequestHeader("id") Long id) {
+    public boolean deleteFeature(@RequestHeader("id") Long id) {
         log.info("Call to Inside createFeature Inside FeatureController........");
         return featureService.deleteFeature(id);
     }

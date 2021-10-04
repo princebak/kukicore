@@ -61,7 +61,7 @@ public class OwnerController {
         );
     }
     @PostMapping("/delete")
-    public boolean updateOwner(@RequestHeader("id") Long id) {
+    public boolean deleteOwner(@RequestHeader("id") Long id) {
         log.info("Call to Inside createOwner Inside OwnerController........");
         return ownerService.deleteOwner(id);
     }

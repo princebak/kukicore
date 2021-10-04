@@ -61,7 +61,7 @@ public class ReservationController {
         );
     }
     @PostMapping("/delete")
-    public boolean updateReservation(@RequestHeader("id") Long id) {
+    public boolean deleteReservation(@RequestHeader("id") Long id) {
         log.info("Call to Inside createReservation Inside ReservationController........");
         return reservationService.deleteReservation(id);
     }

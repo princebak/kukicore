@@ -63,7 +63,7 @@ public class LodgementController {
         );
     }
     @PostMapping("/delete")
-    public boolean updateLodgement(@RequestHeader("id") Long id) {
+    public boolean deleteLodgement(@RequestHeader("id") Long id) {
         log.info("Call to Inside createLodgement Inside LodgementController........");
         return lodgementService.deleteLodgement(id);
     }
